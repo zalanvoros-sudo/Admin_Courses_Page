@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/prototype-favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>instui-sandbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Inclusive+Sans:ital@0;1&display=swap" rel="stylesheet" />
+    <script>
+      (function () {
+        var p = new URLSearchParams(window.location.search).get('p');
+        if (p) {
+          var q = new URLSearchParams(window.location.search).get('q');
+          window.history.replaceState(
+            null, null,
+            window.location.pathname.replace(/\/$/, '') + '/' + decodeURIComponent(p) +
+            (q ? '?' + decodeURIComponent(q) : '') +
+            window.location.hash
+          );
+        }
+      })();
+    </script>
+    <script>
+      (function (m, a, z, e) {
+        var s, t, u, v;
+        try {
+          t = m.sessionStorage.getItem('maze-us');
+        } catch (err) {}
+
+        if (!t) {
+          t = new Date().getTime();
+          try {
+            m.sessionStorage.setItem('maze-us', t);
+          } catch (err) {}
+        }
+
+        u = document.currentScript || (function () {
+          var w = document.getElementsByTagName('script');
+          return w[w.length - 1];
+        })();
+        v = u && u.nonce;
+
+        s = a.createElement('script');
+        s.src = z + '?apiKey=' + e;
+        s.async = true;
+        if (v) s.setAttribute('nonce', v);
+        a.getElementsByTagName('head')[0].appendChild(s);
+        m.mazeUniversalSnippetApiKey = e;
+      })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', 'bf70bf5a-f819-443f-9895-f5a3e8314250');
+    </script>
+    <script type="module" crossorigin src="/assets/main-C0cv8dGb.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/v2-C9oVrVvN.js">
+    <link rel="modulepreload" crossorigin href="/assets/preload-helper-rov5CBGT.js">
+    <link rel="modulepreload" crossorigin href="/assets/themes-8IrmWrHl.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-C10L7W2l.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-C25IBbkh.js">
+    <link rel="modulepreload" crossorigin href="/assets/useDeterministicId-DVEeu_Yg.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-DT3E-09-.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-LyBDQ6Wv.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-CjZc0cCf.js">
+    <link rel="modulepreload" crossorigin href="/assets/useComputedTheme-BEikr0mC.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-BsCCxi9P.js">
+    <link rel="modulepreload" crossorigin href="/assets/v1-amZ2Zgth.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-Co9Ueobw.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-qu7h6EwP.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-Ct1py3Ji.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-hIT08mgY.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-D09DaAMP.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-CAWYwp6Y.js">
+    <link rel="modulepreload" crossorigin href="/assets/v2-BqGlM9Vu.js">
+    <link rel="modulepreload" crossorigin href="/assets/InfiniteCanvas-CS7VYqHS.js">
+    <link rel="stylesheet" crossorigin href="/assets/main-tmiJbEAk.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

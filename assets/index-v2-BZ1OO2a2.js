@@ -1,0 +1,1 @@
+import{G as e,T as t}from"./v2-C9oVrVvN.js";import n from"./admin-courses-D2MlF3p1.js";var r=e(t(),1);function i(e){return(0,r.jsx)(n,{...e,variant:`b`})}export{i as default};
